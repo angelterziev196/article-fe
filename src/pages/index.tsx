@@ -1,12 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Hero } from '../components/Hero';
+import { SubmitButton } from '@/components/SubmitButton';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div>
-      <h2>Hello Next</h2>
+      <Hero />
+      <div className="max-w-[1200px] my-0 mx-auto"></div>
     </div>
-  )
+  );
 }
